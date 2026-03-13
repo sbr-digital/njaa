@@ -20,23 +20,23 @@ export function Home() {
 
       {/* Hero */}
       <section
-        className="relative min-h-[92vh] flex items-center justify-center bg-gradient-to-br from-primary-600 via-primary-500 to-secondary-500 overflow-hidden"
+        className="relative min-h-[92vh] flex items-center justify-center bg-gradient-to-br from-primary-800 via-primary-600 to-primary-500 overflow-hidden"
         aria-label="Seção principal"
       >
-        <div className="absolute inset-0 opacity-10 pointer-events-none select-none text-[12rem] leading-none grid grid-cols-4 overflow-hidden">
-          {'🐾'.repeat(16)}
+        <div className="absolute inset-0 opacity-[0.06] pointer-events-none select-none text-[10rem] leading-none flex flex-wrap overflow-hidden">
+          {'🐾'.repeat(24)}
         </div>
 
         <div className="container-custom relative z-10 text-center py-24 px-4">
           <AnimatedSection animation="fade-up">
-            <span className="inline-flex items-center gap-2 bg-white/20 text-white text-sm font-semibold px-4 py-1.5 rounded-full mb-6">
+            <span className="inline-flex items-center gap-2 bg-white/15 text-white text-sm font-semibold px-4 py-1.5 rounded-full mb-6 backdrop-blur-sm">
               <PawPrint size={14} /> Jaguarão, RS
             </span>
             <h1 className="font-display font-bold text-5xl md:text-7xl text-white leading-tight mb-6 text-balance">
               Salvar vidas é<br />
-              <span className="text-white/80">nossa missão</span>
+              <span className="text-primary-200">nossa missão</span>
             </h1>
-            <p className="text-white/80 text-xl max-w-xl mx-auto mb-10">
+            <p className="text-white/75 text-xl max-w-xl mx-auto mb-10">
               O NJAA resgata, cuida e encontra lares amorosos para animais
               abandonados. Cada adoção é uma vida transformada.
             </p>
@@ -48,7 +48,7 @@ export function Home() {
                 href={socialLinks.whatsapp}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-secondary text-base px-8 py-4"
+                className="inline-flex items-center gap-2 bg-white text-primary-600 font-semibold px-8 py-4 rounded-full shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200 text-base"
               >
                 <Users size={18} /> Seja Sócio
               </a>
@@ -77,7 +77,7 @@ export function Home() {
       </section>
 
       {/* Quem Somos */}
-      <section id="quem-somos" className="py-20 bg-light" aria-label="Quem somos">
+      <section id="quem-somos" className="py-20 bg-primary-50" aria-label="Quem somos">
         <div className="container-custom">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <AnimatedSection>
@@ -146,7 +146,7 @@ export function Home() {
       </section>
 
       {/* CTA Final */}
-      <section className="py-20 bg-gradient-to-r from-primary-500 to-secondary-500" aria-label="Chamada para ação">
+      <section className="py-20 bg-gradient-to-r from-primary-700 to-primary-500" aria-label="Chamada para ação">
         <div className="container-custom text-center">
           <AnimatedSection>
             <h2 className="font-display font-bold text-4xl text-white mb-4">
