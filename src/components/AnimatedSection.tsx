@@ -1,4 +1,4 @@
-import { useRef, useEffect, type ReactNode } from 'react'
+import { useRef, type ReactNode } from 'react'
 import { useInView } from '@/hooks/useInView'
 
 interface AnimatedSectionProps {
