@@ -15,7 +15,7 @@ const BASE_IMAGE = `${BASE_URL}/og-image.jpg`
 
 export function SEO({
   title,
-  description = 'ONG dedicada ao resgate, cuidado e adoção de animais abandonados em Jaguarão, RS.',
+  description = 'ONG dedicada ao controle populacional(castração), cuidado e adoção de animais abandonados em Jaguarão, RS.',
   canonical,
   image = BASE_IMAGE,
   type = 'website',
