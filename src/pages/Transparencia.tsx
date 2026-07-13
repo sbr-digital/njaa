@@ -44,7 +44,7 @@ export function Transparencia() {
       <section className="py-20 bg-white">
         <div className="container-custom">
           <AnimatedSection className="text-center mb-12">
-            <h2 className="section-title mb-3">Impacto acumulado</h2>
+            <h2 className="section-title mb-3">Nossos Números</h2>
           </AnimatedSection>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4 lg:gap-6">
             {transparencyStats.map((stat, i) => (

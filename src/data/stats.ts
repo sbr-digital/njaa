@@ -46,7 +46,7 @@ export const transparencyStats: TransparencyStat[] = [
   {
     id: 'pagamento-administrativo',
     icon: '🏛️',
-    value: 211.06,
+    value: 3166,
     label: 'Despesas Administrativas',
     description: 'Despesas operacionais da ONG',
     color: 'purple',
