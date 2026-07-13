@@ -24,6 +24,10 @@ export function Header() {
     return () => { document.body.style.overflow = '' }
   }, [menuOpen])
 
+  const handleLinkClick = () => {
+    setMenuOpen(false)
+  }
+
   return (
     <>
       <header
@@ -107,6 +111,7 @@ export function Header() {
               key={link.href}
               to={link.href}
               target={link.target || '_self'}
+              onClick={handleLinkClick}
               className={`px-4 py-3 rounded-xl text-base font-medium transition-colors ${
                 location.pathname === link.href
                   ? 'bg-primary-50 text-primary-600'

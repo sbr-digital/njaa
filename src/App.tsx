@@ -14,13 +14,16 @@ function ScrollHandler() {
     // Se tem hash, scrolla para o elemento
     if (hash) {
       const id = hash.replace('#', '')
-      const element = document.getElementById(id)
       
-      if (element) {
-        setTimeout(() => {
+      // setTimeout garante que o DOM foi renderizado
+      const timer = setTimeout(() => {
+        const element = document.getElementById(id)
+        if (element) {
           element.scrollIntoView({ behavior: 'smooth', block: 'start' })
-        }, 100)
-      }
+        }
+      }, 100)
+      
+      return () => clearTimeout(timer)
     } else {
       // Sem hash, scrolla para o topo
       window.scrollTo(0, 0)

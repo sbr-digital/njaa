@@ -5,6 +5,13 @@ import { navLinks, socialLinks } from '@/data/navigation'
 export function Footer() {
   const year = new Date().getFullYear()
 
+  const handleDonationClick = () => {
+    const element = document.getElementById('doar')
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    }
+  }
+
   return (
     <footer className="bg-dark text-white" role="contentinfo">
       <div className="container-custom py-12">
@@ -39,7 +46,6 @@ export function Footer() {
                 </li>
               ))}
             </ul>
-            
           </div>
 
           {/* Donation & Contact */}
@@ -47,13 +53,13 @@ export function Footer() {
             <h3 className="font-display font-semibold text-white mb-4">Apoio</h3>
             <div className="space-y-4">
               {/* Donation CTA */}
-              <Link
-                to="/#doar"
-                className="flex items-center gap-2 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-medium px-4 py-3 rounded-xl transition-all hover:shadow-lg"
+              <button
+                onClick={handleDonationClick}
+                className="flex items-center gap-2 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-medium px-4 py-3 rounded-xl transition-all hover:shadow-lg w-full justify-center"
               >
                 <Gift size={16} />
                 Fazer Doação
-              </Link>
+              </button>
 
               {/* Contact */}
               <div>
