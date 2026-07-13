@@ -5,8 +5,8 @@ export const navLinks: NavLink[] = [
   // { label: 'Quem Somos',     href: '/#quem-somos'  },
   // { label: 'Adoção',         href: '/adocao'        },
   { label: 'Planos',     href: '/planos' },
-  { label: 'Seja Sócio',     href: 'https://forms.gle/M1RMTJPn9doHrzse7', target: '_blank' },
   { label: 'Transparência',  href: '/transparencia' },
+  { label: 'Doações',    href: '/#doar' },
   // { label: 'Contato',        href: '/contato'       },
 ]
 

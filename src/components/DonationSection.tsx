@@ -17,7 +17,7 @@ export function DonationSection() {
   }
 
   return (
-    <section className="py-20 bg-gradient-to-r from-purple-600 via-pink-600 to-red-500" aria-label="Doações PIX">
+    <section id="doar" className="py-20 bg-gradient-to-r from-purple-600 via-pink-600 to-red-500" aria-label="Doações PIX">
       <div className="container-custom">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <AnimatedSection>

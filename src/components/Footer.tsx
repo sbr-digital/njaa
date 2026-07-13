@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { Instagram, Mail, Phone, Heart } from 'lucide-react'
+import { Instagram, Mail, Phone, Heart, Gift } from 'lucide-react'
 import { navLinks, socialLinks } from '@/data/navigation'
 
 export function Footer() {
@@ -27,7 +27,7 @@ export function Footer() {
           <div>
             <h3 className="font-display font-semibold text-white mb-4">Páginas</h3>
             <ul className="space-y-2">
-              {navLinks.map((link) => (
+              {navLinks.filter((link) => link.label !== "Doações").map((link) => (
                 <li key={link.href}>
                   <Link
                     to={link.href}
@@ -39,47 +39,63 @@ export function Footer() {
                 </li>
               ))}
             </ul>
+            
           </div>
 
-          {/* Contact */}
+          {/* Donation & Contact */}
           <div>
-            <h3 className="font-display font-semibold text-white mb-4">Contato</h3>
-            <ul className="space-y-3">
-              <li>
-                <a
-                  href={socialLinks.instagram}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-gray-400 hover:text-primary-400 text-sm transition-colors"
-                  aria-label="Instagram da NJAA"
-                >
-                  <Instagram size={16} />
-                  @njaa_jag
-                </a>
-              </li>
-              <li>
-                <a
-                  href={`mailto:${socialLinks.email}`}
-                  className="flex items-center gap-2 text-gray-400 hover:text-primary-400 text-sm transition-colors"
-                  aria-label="E-mail da NJAA"
-                >
-                  <Mail size={16} />
-                  {socialLinks.email}
-                </a>
-              </li>
-              <li>
-                <a
-                  href={socialLinks.whatsapp}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-gray-400 hover:text-primary-400 text-sm transition-colors"
-                  aria-label="WhatsApp da NJAA"
-                >
-                  <Phone size={16} />
-                  WhatsApp
-                </a>
-              </li>
-            </ul>
+            <h3 className="font-display font-semibold text-white mb-4">Apoio</h3>
+            <div className="space-y-4">
+              {/* Donation CTA */}
+              <Link
+                to="/#doar"
+                className="flex items-center gap-2 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-medium px-4 py-3 rounded-xl transition-all hover:shadow-lg"
+              >
+                <Gift size={16} />
+                Fazer Doação
+              </Link>
+
+              {/* Contact */}
+              <div>
+                <p className="text-gray-400 text-xs font-semibold uppercase mb-2">Contato</p>
+                <ul className="space-y-2">
+                  <li>
+                    <a
+                      href={socialLinks.instagram}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 text-gray-400 hover:text-primary-400 text-sm transition-colors"
+                      aria-label="Instagram da NJAA"
+                    >
+                      <Instagram size={16} />
+                      @njaa_jag
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href={`mailto:${socialLinks.email}`}
+                      className="flex items-center gap-2 text-gray-400 hover:text-primary-400 text-sm transition-colors"
+                      aria-label="E-mail da NJAA"
+                    >
+                      <Mail size={16} />
+                      {socialLinks.email}
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href={socialLinks.whatsapp}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 text-gray-400 hover:text-primary-400 text-sm transition-colors"
+                      aria-label="WhatsApp da NJAA"
+                    >
+                      <Phone size={16} />
+                      WhatsApp
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
 

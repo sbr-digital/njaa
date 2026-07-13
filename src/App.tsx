@@ -7,12 +7,25 @@ import { Adocao } from '@/pages/Adocao'
 import { SejaSocio } from '@/pages/SejaSocio'
 import { Transparencia } from '@/pages/Transparencia'
 
-function ScrollToTop() {
-  const { pathname } = useLocation()
+function ScrollHandler() {
+  const { pathname, hash } = useLocation()
 
   useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [pathname])
+    // Se tem hash, scrolla para o elemento
+    if (hash) {
+      const id = hash.replace('#', '')
+      const element = document.getElementById(id)
+      
+      if (element) {
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: 'smooth', block: 'start' })
+        }, 100)
+      }
+    } else {
+      // Sem hash, scrolla para o topo
+      window.scrollTo(0, 0)
+    }
+  }, [pathname, hash])
 
   return null
 }
@@ -20,7 +33,7 @@ function ScrollToTop() {
 export function App() {
   return (
     <BrowserRouter>
-      <ScrollToTop />
+      <ScrollHandler />
       <a href="#main-content" className="skip-to-content">
         Pular para o conteúdo
       </a>
