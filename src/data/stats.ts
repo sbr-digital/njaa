@@ -14,7 +14,7 @@ export const transparencyStats: TransparencyStat[] = [
     icon: '❤️',
     value: 75,
     label: 'Sócios Ativos',
-    description: 'Pessoas que fazem a diferença',
+    description: 'Pessoas que fazem a diferença   ',
     color: 'rose',
   },
   {

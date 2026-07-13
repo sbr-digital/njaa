@@ -26,7 +26,7 @@ export function StatCard({ stat, large = false }: StatCardProps) {
       ref={ref}
       className={`card border ${
         colorMap[stat.color].split(' ').slice(1).join(' ')
-      } p-6 text-center flex flex-col items-center gap-3`}
+      } p-6 text-center flex flex-col items-center justify-center gap-3 min-h-64`}
     >
       <span className="text-4xl" role="img" aria-label={stat.label}>
         {stat.icon}
