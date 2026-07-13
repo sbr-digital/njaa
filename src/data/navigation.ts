@@ -6,7 +6,7 @@ export const navLinks: NavLink[] = [
   // { label: 'Adoção',         href: '/adocao'        },
   { label: 'Seja Sócio',     href: 'https://forms.gle/M1RMTJPn9doHrzse7', target: '_blank' },
   { label: 'Transparência',  href: '/transparencia' },
-  { label: 'Contato',        href: '/contato'       },
+  // { label: 'Contato',        href: '/contato'       },
 ]
 
 export const socialLinks = {
