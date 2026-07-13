@@ -67,7 +67,9 @@ export function SejaSocio() {
                   </h3>
                   <p className="text-4xl font-bold text-primary-600 mb-1">
                     R$ {plan.price}
-                    <span className="text-base font-normal text-gray-400">/mês</span>
+                    <span className="text-base font-normal text-gray-400">{
+                      plan.period==='anual' ? '/ano' : '/mês'
+                    }</span>
                   </p>
 
                   <ul className="space-y-3 my-6">
@@ -81,7 +83,11 @@ export function SejaSocio() {
 
                   <a
                     href={`${socialLinks.whatsapp}?text=${encodeURIComponent(
-                      `Olá! Quero me tornar sócio ${plan.name} da NJAA (R$ ${plan.price}/mês). 🐾`
+                      `${
+                        plan.price != null
+                          ? `Olá! Quero me tornar sócio do plano (${plan.name}) - (R$ ${plan.price}/${plan.period === 'anual' ? 'ano' : 'mês'})`
+                          : 'Olá! Quero me tornar sócio e gostaria de contribuir com um valor personalizado'
+                      }.`
                     )}`}
                     target="_blank"
                     rel="noopener noreferrer"
