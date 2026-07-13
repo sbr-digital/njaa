@@ -49,6 +49,7 @@ export function Header() {
               <Link
                 key={link.href}
                 to={link.href}
+                target={link.target || '_self'}
                 className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors duration-200 ${
                   location.pathname === link.href
                     ? 'text-primary-600 bg-primary-50'
@@ -103,6 +104,7 @@ export function Header() {
             <Link
               key={link.href}
               to={link.href}
+              target={link.target || '_self'}
               className={`px-4 py-3 rounded-xl text-base font-medium transition-colors ${
                 location.pathname === link.href
                   ? 'bg-primary-50 text-primary-600'

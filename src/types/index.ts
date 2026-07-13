@@ -3,6 +3,7 @@ export interface NavLink {
   label: string
   href: string
   isExternal?: boolean
+  target?: '_blank' | '_self' | '_parent' | '_top'
 }
 
 // ─── Transparency / Stats ─────────────────────────────────────────────────────

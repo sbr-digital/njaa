@@ -94,7 +94,7 @@ export function Home() {
                 veterinário e, acima de tudo, amor. Contamos com voluntários,
                 doadores e sócios que tornam essa missão possível todos os dias.
               </p>
-              <Link to="/seja-socio" className="btn-primary">
+              <Link to="https://forms.gle/M1RMTJPn9doHrzse7" target="_blank" rel="noopener noreferrer" className="btn-primary">
                 <Heart size={16} /> Quero apoiar
               </Link>
             </AnimatedSection>

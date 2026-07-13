@@ -31,6 +31,7 @@ export function Footer() {
                 <li key={link.href}>
                   <Link
                     to={link.href}
+                    target={link.target || '_self'}
                     className="text-gray-400 hover:text-primary-400 text-sm transition-colors"
                   >
                     {link.label}
