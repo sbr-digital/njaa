@@ -99,7 +99,7 @@ export function Home() {
               </Link>
             </AnimatedSection>
 
-            <AnimatedSection delay={150} className="grid grid-cols-2 gap-4">
+            {/* <AnimatedSection delay={150} className="grid grid-cols-2 gap-4">
               {[
                 { emoji: '🐾', title: 'Resgate', desc: 'Atuamos em casos de maus-tratos e abandono em toda a região.' },
                 { emoji: '💉', title: 'Saúde Animal', desc: 'Vacinação, castração e atendimento veterinário para todos.' },
@@ -112,7 +112,7 @@ export function Home() {
                   <p className="text-gray-500 text-sm">{item.desc}</p>
                 </div>
               ))}
-            </AnimatedSection>
+            </AnimatedSection> */}
           </div>
         </div>
       </section>
