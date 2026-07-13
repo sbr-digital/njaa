@@ -5,6 +5,13 @@
 @layer base {
   :root {
     scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+  }
+
+  @media (max-width: 768px) {
+    :root {
+      scroll-padding-top: 4rem;
+    }
   }
 
   *, *::before, *::after {

@@ -1,9 +1,10 @@
 import { Link } from 'react-router-dom'
-import { ArrowRight, Heart, PawPrint } from 'lucide-react'
+import { ArrowRight, Heart, PawPrint, Users } from 'lucide-react'
 import { SEO } from '@/components/SEO'
 import { AnimatedSection } from '@/components/AnimatedSection'
 import { StatCard } from '@/components/StatCard'
 import { transparencyStats } from '@/data/stats'
+import { socialLinks } from '@/data/navigation'
 
 export function Home() {
   // const featured = animals.filter((a) => a.status === 'disponivel').slice(0, 3)
@@ -36,10 +37,10 @@ export function Home() {
             <p className="text-white/75 text-xl max-w-xl mx-auto mb-10">
               O NJAA tem por finalidade principal desenvolver ações que promavam e estimulem o respeito à vida animal.
             </p>
-            {/* <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link to="/adocao" className="btn-primary text-base px-8 py-4">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              {/* <Link to="/adocao" className="btn-primary text-base px-8 py-4">
                 <Heart size={18} /> Ver animais para adoção
-              </Link>
+              </Link> */}
               <a
                 href={socialLinks.whatsapp}
                 target="_blank"
@@ -48,7 +49,7 @@ export function Home() {
               >
                 <Users size={18} /> Seja Sócio
               </a>
-            </div> */}
+            </div>
           </AnimatedSection>
         </div>
       </section>
