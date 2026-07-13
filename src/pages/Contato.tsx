@@ -166,7 +166,7 @@ export function Contato() {
                   {
                     icon: Phone,
                     label: 'WhatsApp',
-                    value: '+55 53 9 9999-9999',
+                    value: '+55 53 9 9121-1452',
                     href: socialLinks.whatsapp,
                     external: true,
                   },
@@ -210,12 +210,12 @@ export function Contato() {
                 ))}
               </div>
 
-              <div className="card p-6 bg-primary-50 border-primary-100">
-                <h3 className="font-display font-semibold text-dark mb-2">Horário de atendimento</h3>
+              <div className="card p-7 bg-primary-50 border-primary-100">
+                {/* <h3 className="font-display font-semibold text-dark mb-2">Horário de atendimento</h3> */}
                 <p className="text-gray-600 text-sm">
-                  Segunda a sexta: 9h às 17h<br />
-                  Sábados: 9h às 12h<br />
-                  <span className="text-gray-400">Atendimento emergencial via WhatsApp</span>
+                  {/* Segunda a sexta: 9h às 17h<br />
+                  Sábados: 9h às 12h<br /> */}
+                  <span className="text-gray-400"> </span>
                 </p>
               </div>
             </AnimatedSection>

@@ -1,4 +1,4 @@
-import { Check, Heart, Star } from 'lucide-react'
+import { Check, Heart } from 'lucide-react'
 import { SEO } from '@/components/SEO'
 import { AnimatedSection } from '@/components/AnimatedSection'
 import { membershipPlans } from '@/data/membership'
@@ -21,8 +21,8 @@ export function SejaSocio() {
             <Heart size={40} className="mx-auto mb-4 opacity-80" />
             <h1 className="font-display font-bold text-5xl mb-3">Seja Sócio</h1>
             <p className="text-white/80 text-lg max-w-xl mx-auto">
-              Sua contribuição mensal garante ração, vacinas, castrações e muito
-              mais para os animais sob nossos cuidados.
+              Sua contribuição garante castrações, consultas, resgates e muito
+              mais para os animais.
             </p>
           </AnimatedSection>
         </div>
@@ -38,7 +38,7 @@ export function SejaSocio() {
             </p>
           </AnimatedSection>
 
-          <div className="grid md:grid-cols-3 gap-6 items-start">
+          <div className="grid md:grid-cols-2 gap-6 items-start">
             {membershipPlans.map((plan, i) => (
               <AnimatedSection key={plan.id} delay={i * 100}>
                 <div
@@ -50,9 +50,9 @@ export function SejaSocio() {
                 >
                   {plan.highlighted && (
                     <div className="absolute -top-4 left-1/2 -translate-x-1/2">
-                      <span className="inline-flex items-center gap-1 bg-primary-500 text-white text-xs font-bold px-4 py-1.5 rounded-full">
+                      {/* <span className="inline-flex items-center gap-1 bg-primary-500 text-white text-xs font-bold px-4 py-1.5 rounded-full">
                         <Star size={12} /> Mais popular
-                      </span>
+                      </span> */}
                     </div>
                   )}
 
@@ -67,9 +67,10 @@ export function SejaSocio() {
                   </h3>
                   <p className="text-4xl font-bold text-primary-600 mb-1">
                     R$ {plan.price}
-                    <span className="text-base font-normal text-gray-400">/mês</span>
+                    <span className="text-base font-normal text-gray-400">{
+                      plan.period==='anual' ? '/ano' : '/mês'
+                    }</span>
                   </p>
-
                   <ul className="space-y-3 my-6">
                     {plan.benefits.map((benefit) => (
                       <li key={benefit} className="flex items-start gap-2 text-sm text-gray-600">
@@ -81,7 +82,7 @@ export function SejaSocio() {
 
                   <a
                     href={`${socialLinks.whatsapp}?text=${encodeURIComponent(
-                      `Olá! Quero me tornar sócio ${plan.name} da NJAA (R$ ${plan.price}/mês). 🐾`
+                      `Olá! Quero me tornar sócio ${plan.name} da NJAA (R$ ${plan.price}). 🐾`
                     )}`}
                     target="_blank"
                     rel="noopener noreferrer"

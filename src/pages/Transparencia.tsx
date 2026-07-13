@@ -84,7 +84,7 @@ export function Transparencia() {
                     <tbody className="divide-y divide-gray-50">
                       {records.map((rec) => (
                         <tr key={`${rec.year}-${rec.quarter}`} className="hover:bg-gray-50 transition-colors">
-                          <td className="px-5 py-3.5 font-medium text-dark">{rec.quarter} {rec.year}</td>
+                          <td className="px-5 py-3.5 font-medium text-dark">{rec.quarter}</td>
                           <td className="px-5 py-3.5 text-right text-green-600 font-medium">{formatCurrency(rec.received)}</td>
                           <td className="px-5 py-3.5 text-right text-red-500 font-medium">{formatCurrency(rec.spent)}</td>
                           <td className="px-5 py-3.5 text-right font-semibold text-primary-600">{formatCurrency(rec.balance)}</td>

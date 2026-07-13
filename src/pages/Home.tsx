@@ -1,15 +1,12 @@
 import { Link } from 'react-router-dom'
-import { Heart, PawPrint, Users, ArrowRight } from 'lucide-react'
+import { Heart, PawPrint, ArrowRight } from 'lucide-react'
 import { SEO } from '@/components/SEO'
 import { AnimatedSection } from '@/components/AnimatedSection'
 import { StatCard } from '@/components/StatCard'
-import { AnimalCard } from '@/components/AnimalCard'
-import { animals } from '@/data/animals'
 import { transparencyStats } from '@/data/stats'
-import { socialLinks } from '@/data/navigation'
 
 export function Home() {
-  const featured = animals.filter((a) => a.status === 'disponivel').slice(0, 3)
+  // const featured = animals.filter((a) => a.status === 'disponivel').slice(0, 3)
 
   return (
     <>
@@ -37,10 +34,9 @@ export function Home() {
               <span className="text-primary-200">nossa missão</span>
             </h1>
             <p className="text-white/75 text-xl max-w-xl mx-auto mb-10">
-              O NJAA resgata, cuida e encontra lares amorosos para animais
-              abandonados. Cada adoção é uma vida transformada.
+              O NJAA tem por finalidade principal desenvolver ações que promavam e estimulem o respeito à vida animal.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            {/* <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link to="/adocao" className="btn-primary text-base px-8 py-4">
                 <Heart size={18} /> Ver animais para adoção
               </Link>
@@ -52,7 +48,7 @@ export function Home() {
               >
                 <Users size={18} /> Seja Sócio
               </a>
-            </div>
+            </div> */}
           </AnimatedSection>
         </div>
       </section>
@@ -107,7 +103,7 @@ export function Home() {
               {[
                 { emoji: '🐾', title: 'Resgate', desc: 'Atuamos em casos de maus-tratos e abandono em toda a região.' },
                 { emoji: '💉', title: 'Saúde Animal', desc: 'Vacinação, castração e atendimento veterinário para todos.' },
-                { emoji: '🏠', title: 'Adoção', desc: 'Processo responsável para garantir o lar certo para cada animal.' },
+                // { emoji: '🏠', title: 'Adoção', desc: 'Processo responsável para garantir o lar certo para cada animal.' },
                 { emoji: '❤️', title: 'Voluntariado', desc: 'Mais de 50 voluntários dedicam seu tempo à causa animal.' },
               ].map((item) => (
                 <div key={item.title} className="card p-5">
@@ -122,7 +118,7 @@ export function Home() {
       </section>
 
       {/* Animais em Destaque */}
-      <section className="py-20 bg-white" aria-label="Animais disponíveis para adoção">
+      {/* <section className="py-20 bg-white" aria-label="Animais disponíveis para adoção">
         <div className="container-custom">
           <AnimatedSection className="text-center mb-12">
             <h2 className="section-title mb-3">Prontos para te amar</h2>
@@ -143,7 +139,7 @@ export function Home() {
             </Link>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA Final */}
       <section className="py-20 bg-gradient-to-r from-primary-700 to-primary-500" aria-label="Chamada para ação">

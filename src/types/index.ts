@@ -37,7 +37,7 @@ export interface Donation {
 
 export interface Expense {
   id: string
-  category: 'medicamentos' | 'racao' | 'cirurgia' | 'castracao' | 'vacinas' | 'infraestrutura' | 'outros'
+  category: 'administrativo' | 'racao' | 'cirurgia' | 'castracao' | 'vacinas' | 'infraestrutura' | 'outros'
   amount: number
   date: string
   description: string

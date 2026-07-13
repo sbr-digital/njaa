@@ -19,7 +19,7 @@ export function Footer() {
               Núcleo Jaguarense de Assistência Animal. Salvando vidas, um animal de cada vez.
             </p>
             <p className="text-gray-500 text-xs mt-3">
-              CNPJ: 12.028.813/0001-79
+              CNPJ: 59.661.803/0001-30
             </p>
           </div>
 
