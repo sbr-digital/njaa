@@ -29,6 +29,20 @@ export const membershipPlans: MembershipPlan[] = [
       // 'Atualizações dos animais patrocinados',
     ],
   },
+  {
+  id: 'other',
+  name: 'Outros valores mensais',
+  // price: 30,
+  period: 'mensal',
+  color: 'from-primary-400 to-green-600',  
+  benefits: [
+    // 'Tudo do plano Apoiador',
+    // 'Menção especial nas redes sociais',
+    // 'Kit de boas-vindas digital',
+    // 'Acesso a eventos exclusivos da ONG',
+    // 'Atualizações dos animais patrocinados',
+  ],
+},
   // {
   //   id: 'guardiao',
   //   name: 'Guardião',

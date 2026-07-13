@@ -71,7 +71,7 @@ export interface Animal {
 export interface MembershipPlan {
   id: string
   name: string
-  price: number
+  price?: number
   period: 'mensal' | 'anual'
   benefits: string[]
   highlighted?: boolean

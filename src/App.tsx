@@ -17,7 +17,7 @@ export function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/adocao" element={<Adocao />} />
-          <Route path="/seja-socio" element={<SejaSocio />} />
+          <Route path="/planos" element={<SejaSocio />} />
           <Route path="/transparencia" element={<Transparencia />} />
         </Routes>
       </main>

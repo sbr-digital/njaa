@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { Heart, PawPrint } from 'lucide-react'
+import { ArrowRight, Heart, PawPrint } from 'lucide-react'
 import { SEO } from '@/components/SEO'
 import { AnimatedSection } from '@/components/AnimatedSection'
 import { StatCard } from '@/components/StatCard'
@@ -152,14 +152,14 @@ export function Home() {
               Adote, seja voluntário, doe ração ou torne-se sócio. Qualquer gesto
               de amor salva vidas.
             </p>
-            {/* <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link to="/adocao" className="btn-secondary">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              {/* <Link to="/adocao" className="btn-secondary">
                 <Heart size={16} /> Adotar agora
-              </Link>
-              <Link to="/seja-socio" className="btn-ghost">
+              </Link> */}
+              <Link to="/planos" className="btn-ghost">
                 Ser sócio <ArrowRight size={16} />
               </Link>
-            </div> */}
+            </div>
           </AnimatedSection>
         </div>
       </section>

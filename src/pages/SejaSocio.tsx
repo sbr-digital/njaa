@@ -8,9 +8,9 @@ export function SejaSocio() {
   return (
     <>
       <SEO
-        title="Seja Sócio"
+        title="Planos"
         description="Torne-se sócio da NJAA e ajude a salvar mais vidas. Planos a partir de R$ 20/mês com benefícios exclusivos."
-        canonical="/seja-socio"
+        canonical="/planos"
         keywords="sócio ONG animais, apoiar NJAA, doação mensal animais Jaguarão"
       />
 
@@ -21,8 +21,8 @@ export function SejaSocio() {
             <Heart size={40} className="mx-auto mb-4 opacity-80" />
             <h1 className="font-display font-bold text-5xl mb-3">Seja Sócio</h1>
             <p className="text-white/80 text-lg max-w-xl mx-auto">
-              Sua contribuição garante castrações, consultas, resgates e muito
-              mais para os animais.
+              Sua contribuição mensal garante ração, vacinas, castrações e muito
+              mais para os animais sob nossos cuidados.
             </p>
           </AnimatedSection>
         </div>
@@ -38,7 +38,7 @@ export function SejaSocio() {
             </p>
           </AnimatedSection>
 
-          <div className="grid md:grid-cols-2 gap-6 items-start">
+          <div className="grid md:grid-cols-3 gap-6 items-start">
             {membershipPlans.map((plan, i) => (
               <AnimatedSection key={plan.id} delay={i * 100}>
                 <div
@@ -67,10 +67,9 @@ export function SejaSocio() {
                   </h3>
                   <p className="text-4xl font-bold text-primary-600 mb-1">
                     R$ {plan.price}
-                    <span className="text-base font-normal text-gray-400">{
-                      plan.period==='anual' ? '/ano' : '/mês'
-                    }</span>
+                    <span className="text-base font-normal text-gray-400">/mês</span>
                   </p>
+
                   <ul className="space-y-3 my-6">
                     {plan.benefits.map((benefit) => (
                       <li key={benefit} className="flex items-start gap-2 text-sm text-gray-600">
@@ -82,7 +81,7 @@ export function SejaSocio() {
 
                   <a
                     href={`${socialLinks.whatsapp}?text=${encodeURIComponent(
-                      `Olá! Quero me tornar sócio ${plan.name} da NJAA (R$ ${plan.price}). 🐾`
+                      `Olá! Quero me tornar sócio ${plan.name} da NJAA (R$ ${plan.price}/mês). 🐾`
                     )}`}
                     target="_blank"
                     rel="noopener noreferrer"
