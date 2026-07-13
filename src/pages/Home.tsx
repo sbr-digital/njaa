@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { Heart, PawPrint, ArrowRight } from 'lucide-react'
+import { Heart, PawPrint } from 'lucide-react'
 import { SEO } from '@/components/SEO'
 import { AnimatedSection } from '@/components/AnimatedSection'
 import { StatCard } from '@/components/StatCard'
@@ -85,7 +85,7 @@ export function Home() {
               </h2>
               <p className="text-gray-600 leading-relaxed mb-4">
                 Fundado em Jaguarão/RS, o NJAA — Núcleo Jaguarense de Assistência
-                Animal é uma organização sem fins lucrativos dedicada ao resgate,
+                Animal é uma organização sem fins lucrativos dedicada ao controle populacional (castrações),
                 tratamento e adoção responsável de animais em situação de
                 vulnerabilidade.
               </p>
@@ -152,14 +152,14 @@ export function Home() {
               Adote, seja voluntário, doe ração ou torne-se sócio. Qualquer gesto
               de amor salva vidas.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            {/* <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link to="/adocao" className="btn-secondary">
                 <Heart size={16} /> Adotar agora
               </Link>
               <Link to="/seja-socio" className="btn-ghost">
                 Ser sócio <ArrowRight size={16} />
               </Link>
-            </div>
+            </div> */}
           </AnimatedSection>
         </div>
       </section>
