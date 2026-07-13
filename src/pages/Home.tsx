@@ -3,6 +3,7 @@ import { ArrowRight, Heart, PawPrint, Users } from 'lucide-react'
 import { SEO } from '@/components/SEO'
 import { AnimatedSection } from '@/components/AnimatedSection'
 import { StatCard } from '@/components/StatCard'
+import { DonationSection } from '@/components/DonationSection'
 import { transparencyStats } from '@/data/stats'
 import { socialLinks } from '@/data/navigation'
 
@@ -141,6 +142,9 @@ export function Home() {
           </div>
         </div>
       </section> */}
+
+      {/* Donation Section */}
+      <DonationSection />
 
       {/* CTA Final */}
       <section className="py-20 bg-gradient-to-r from-primary-700 to-primary-500" aria-label="Chamada para ação">
