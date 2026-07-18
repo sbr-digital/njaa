@@ -6,9 +6,9 @@ import toast from 'react-hot-toast'
 import { SEO } from '@/components/SEO'
 import { AnimatedSection } from '@/components/AnimatedSection'
 
-const EMAILJS_SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID
-const EMAILJS_TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID
-const EMAILJS_PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+const EMAILJS_SERVICE_ID = 'service_6elpubh'
+const EMAILJS_TEMPLATE_ID = 'template_i6mksyd'
+const EMAILJS_PUBLIC_KEY = 'Oesqdf0jEFXoK0Zo1'
 
 export function Pesquisa() {
   const formRef = useRef<HTMLFormElement | null>(null)
