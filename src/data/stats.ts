@@ -54,14 +54,14 @@ export const transparencyStats: TransparencyStat[] = [
 ]
 
 export const financialRecords: FinancialRecord[] = [
-  { year: 2026, quarter: '(jan,fev,mar)', received: 8665, spent: 7284.22, balance: 2274.32 },
   { year: 2026, quarter: '(abr,mai,jun)', received: 10992, spent: 12509.18, balance: 757.14 },
+  { year: 2026, quarter: '(jan,fev,mar)', received: 8665, spent: 7284.22, balance: 2274.32 },
   // { year: 2025, quarter: 'Q3', received: 11600, spent: 10400, balance: 1200 },
   // { year: 2025, quarter: 'Q4', received: 18200, spent: 16500, balance: 1700 },
-  { year: 2025, quarter: '(jan,fev,mar)', received: 30,  spent: 0,  balance: 30  },
-  { year: 2025, quarter: '(abr,mai,jun)', received: 5040, spent: 4226.68, balance: 813.32 },
-  { year: 2025, quarter: '(jul,ago,set)', received: 7524, spent: 7482.46,  balance: 368.29  },
   { year: 2025, quarter: '(out,nov,dez)', received: 7325, spent: 7286.32, balance: 893.54 },
+  { year: 2025, quarter: '(jul,ago,set)', received: 7524, spent: 7482.46,  balance: 368.29  },
+  { year: 2025, quarter: '(abr,mai,jun)', received: 5040, spent: 4226.68, balance: 813.32 },
+  { year: 2025, quarter: '(jan,fev,mar)', received: 30,  spent: 0,  balance: 30  },
 ]
 
 export const recentExpenses: Expense[] = [
