@@ -1,11 +1,18 @@
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom'
 import { useEffect } from 'react'
+import { Toaster } from 'react-hot-toast'
+
+
 import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
 import { Home } from '@/pages/Home'
 import { Adocao } from '@/pages/Adocao'
+//import { Animais } from '@/pages/Animais'
+//import { AnimalDetail } from '@/pages/AnimalDetail'
 import { SejaSocio } from '@/pages/SejaSocio'
 import { Transparencia } from '@/pages/Transparencia'
+import { Pesquisa } from '@/pages/Pesquisa'
+
 
 function ScrollHandler() {
   const { pathname, hash } = useLocation()
@@ -44,12 +51,19 @@ export function App() {
       <main id="main-content">
         <Routes>
           <Route path="/" element={<Home />} />
+          {/* <Route path="/animais" element={<Animais />} />
+          <Route path="/animais/:id" element={<AnimalDetail />} /> */}
           <Route path="/adocao" element={<Adocao />} />
           <Route path="/planos" element={<SejaSocio />} />
           <Route path="/transparencia" element={<Transparencia />} />
+          <Route path="/pesquisa" element={<Pesquisa />} />
         </Routes>
       </main>
       <Footer />
+      <Toaster
+          position="top-center"
+          reverseOrder={false}
+        />
     </BrowserRouter>
   )
 }

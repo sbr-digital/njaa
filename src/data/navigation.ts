@@ -1,13 +1,11 @@
 import type { NavLink } from '@/types'
 
 export const navLinks: NavLink[] = [
-  { label: 'Início',         href: '/'             },
-  // { label: 'Quem Somos',     href: '/#quem-somos'  },
-  // { label: 'Adoção',         href: '/adocao'        },
+  { label: 'Início',     href: '/' },
+  // { label: 'Animais',    href: '/animais' },
   { label: 'Planos',     href: '/planos' },
-  { label: 'Transparência',  href: '/transparencia' },
+  { label: 'Transparência', href: '/transparencia' },
   { label: 'Doações',    href: '/#doar' },
-  // { label: 'Contato',        href: '/contato'       },
 ]
 
 export const socialLinks = {
