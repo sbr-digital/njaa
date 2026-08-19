@@ -6,9 +6,8 @@ import { Toaster } from 'react-hot-toast'
 import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
 import { Home } from '@/pages/Home'
-import { Adocao } from '@/pages/Adocao'
-//import { Animais } from '@/pages/Animais'
-//import { AnimalDetail } from '@/pages/AnimalDetail'
+import { Animais } from '@/pages/Animais'
+import { AnimalDetail } from '@/pages/AnimalDetail'
 import { SejaSocio } from '@/pages/SejaSocio'
 import { Transparencia } from '@/pages/Transparencia'
 import { Pesquisa } from '@/pages/Pesquisa'
@@ -51,12 +50,12 @@ export function App() {
       <main id="main-content">
         <Routes>
           <Route path="/" element={<Home />} />
-          {/* <Route path="/animais" element={<Animais />} />
-          <Route path="/animais/:id" element={<AnimalDetail />} /> */}
-          <Route path="/adocao" element={<Adocao />} />
+          <Route path="/animais" element={<Animais />} />
+          <Route path="/animais/:id" element={<AnimalDetail />} />
           <Route path="/planos" element={<SejaSocio />} />
           <Route path="/transparencia" element={<Transparencia />} />
           <Route path="/pesquisa" element={<Pesquisa />} />
+          <Route path="/seja-socio" element={<SejaSocio />} />
         </Routes>
       </main>
       <Footer />
