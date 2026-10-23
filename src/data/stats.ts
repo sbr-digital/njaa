@@ -4,7 +4,7 @@ export const transparencyStats: TransparencyStat[] = [
   {
     id: 'animais-castrados',
     icon: '🐾',
-    value: 120,
+    value: 140,
     label: 'Animais Castrados',
     description: 'Desde a fundação da ONG',
     color: 'primary',
@@ -12,7 +12,7 @@ export const transparencyStats: TransparencyStat[] = [
   {
     id: 'socios',
     icon: '❤️',
-    value: 75,
+    value: 80,
     label: 'Sócios Ativos',
     description: 'Pessoas que fazem a diferença   ',
     color: 'rose',
@@ -28,7 +28,7 @@ export const transparencyStats: TransparencyStat[] = [
   {
     id: 'dinheiro',
     icon: '💸',
-    value: 39576,
+    value: 48301,
     label: 'Valor arrecadado',
     description: 'Recurso arrecadado até o momento',
     color: 'amber',
@@ -37,7 +37,7 @@ export const transparencyStats: TransparencyStat[] = [
   {
     id: 'pagamento-castroes',
     icon: '📈',
-    value: 36410,
+    value: 45135,
     label: 'Pagamento de Castrações',
     description: 'Investimento em saúde animal',
     color: 'secondary',
